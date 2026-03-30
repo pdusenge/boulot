@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: server
+    runtime: docker
+    dockerfilePath: ./Dockerfile.server
+    dockerContext: .
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: MONGODB_URI
+        value: mongodb://mongo:27017/boulot   # "mongo" resolves via Render's internal network
+      - key: JWT_SECRET
+        sync: false                           # set manually in Render dashboard
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_ORG
+        value: boulot-platform
+      - key: GITHUB_WEBHOOK_SECRET
+        sync: false
+      - key: API_BASE_URL
+        sync: false                           # set to your server's public Render URL
+
+  - type: web
+    name: web
+    runtime: docker
+    dockerfilePath: ./Dockerfile.web
+    dockerContext: .
+    buildArgs:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://server.onrender.com/api  # replace with actual server URL
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
