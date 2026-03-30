@@ -12,6 +12,7 @@
     "@boulot/types": "*",
     "@boulot/ui": "*",
     "@boulot/utils": "*",
+    "@fontsource-variable/outfit": "^5.2.8",
     "@reduxjs/toolkit": "^2.2.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.7.0",

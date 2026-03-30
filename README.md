@@ -32,6 +32,24 @@ This is a monolithic repository using **npm workspaces**.
    *Frontend will run on http://localhost:3000*  
    *Backend will run on http://localhost:3001*
 
+## Docker (containerized stack)
+
+Requires [Docker](https://docs.docker.com/get-docker/) with Compose.
+
+From the repo root:
+
+```bash
+docker compose up --build
+```
+
+- **Web**: [http://localhost:3000](http://localhost:3000)
+- **API**: [http://localhost:3001](http://localhost:3001) (health: `/health`, API under `/api`)
+- **MongoDB**: port `27017` (data in volume `mongo_data`)
+
+Set secrets via environment or a `.env` file next to `docker-compose.yml` (e.g. `JWT_SECRET=...`). Optional: `GITHUB_TOKEN`, `GITHUB_ORG`, `GITHUB_WEBHOOK_SECRET`, `API_BASE_URL` for real GitHub provisioning.
+
+`NEXT_PUBLIC_API_URL` is baked at **build** time and must be reachable from the **browser** (defaults to `http://localhost:3001/api` for local compose). For production behind a domain, rebuild the web image with your public API URL.
+
 ## Database Seeding
 
 You can populate the database with demo users (Student, SME, Mentor) and demo projects using the seed script:

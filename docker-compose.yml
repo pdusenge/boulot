@@ -1,0 +1,45 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    restart: unless-stopped
+    environment:
+      PORT: 3001
+      MONGODB_URI: mongodb://mongo:27017/boulot
+      JWT_SECRET: ${JWT_SECRET:-change_me}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-7d}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      GITHUB_ORG: ${GITHUB_ORG:-boulot-platform}
+      GITHUB_WEBHOOK_SECRET: ${GITHUB_WEBHOOK_SECRET:-}
+      API_BASE_URL: ${API_BASE_URL:-http://localhost:3001}
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:3001/api
+    restart: unless-stopped
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:3001/api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+
+volumes:
+  mongo_data:
+
