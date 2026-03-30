@@ -1,0 +1,29 @@
+{
+  "name": "boulot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Boulot — Automated Student-SME Talent Marketplace",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"npm run dev -w apps/server\" \"npm run dev -w apps/web\"",
+    "build": "npm run build -w packages/types && npm run build -w packages/utils && npm run build -w packages/ui && npm run build -w apps/server && npm run build -w apps/web",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "seed": "npm run seed -w apps/server"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "react-redux": "^9.2.0",
+    "redux": "^5.0.1"
+  }
+}

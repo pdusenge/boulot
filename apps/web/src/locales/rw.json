@@ -1,0 +1,123 @@
+{
+  "common": {
+    "appName": "BOULOT",
+    "signIn": "Injira",
+    "signUp": "Iyandikishe",
+    "signOut": "Sohoka",
+    "loading": "Gutegereza...",
+    "error": "Habaye ikosa",
+    "retry": "Ongera ugerageze",
+    "save": "Bika",
+    "cancel": "Hagarika",
+    "submit": "Ohereza",
+    "search": "Shakisha",
+    "filter": "Shungura",
+    "back": "Subira inyuma",
+    "next": "Komeza",
+    "delete": "Siba",
+    "edit": "Hindura",
+    "view": "Reba",
+    "close": "Funga"
+  },
+  "nav": {
+    "dashboard": "Ikibaho",
+    "messages": "Ubutumwa",
+    "browse": "Shakisha",
+    "verifyId": "Emeza Indangamuntu",
+    "myProjects": "Imishinga Yanjye",
+    "myProposals": "Ibisabwa Byanjye",
+    "myProfile": "Umwirondoro Wanjye",
+    "findStudents": "Shakisha Abanyeshuri",
+    "reviewQueue": "Isuzuma",
+    "disputes": "Ibibazo",
+    "admin": "Ubuyobozi",
+    "users": "Abakoresha",
+    "templates": "Ingero",
+    "helpCenter": "Ubufasha"
+  },
+  "landing": {
+    "heroTitle": "Aho Impano z'Abanyeshuri b'Afurika Zihurira n'Amahirwe y'Ibigo",
+    "heroSubtitle": "Boulot ihuza abanyeshuri n'ibigo biciriritse binyuze mu mishinga iyobowe, kwishyura mu buryo bwizewe, n'ubuyobozi bw'abajyanama.",
+    "getStarted": "Tangira",
+    "availableProjects": "Imishinga Iboneka",
+    "hireTalent": "Shaka Impano",
+    "becomeTalent": "Ba Umuhanga"
+  },
+  "auth": {
+    "loginTitle": "Murakaza neza",
+    "loginSubtitle": "Injira mu konti yawe",
+    "registerTitle": "Fungura konti",
+    "email": "Imeyili",
+    "password": "Ijambo ry'ibanga",
+    "firstName": "Izina ry'Ibanze",
+    "lastName": "Irindi Zina",
+    "role": "Uruhare",
+    "student": "Umunyeshuri",
+    "sme": "Ikigo / Gushaka umukozi",
+    "mentor": "Umujyanama",
+    "noAccount": "Nta konti ufite?",
+    "hasAccount": "Usanzwe ufite konti?"
+  },
+  "projects": {
+    "title": "Imishinga Iboneka",
+    "createNew": "Shyiraho Umushinga Mushya",
+    "searchPlaceholder": "Shakisha ku izina, ubumenyi, cyangwa ibisobanuro...",
+    "budget": "Ingengo y'imari",
+    "status": "Imimerere",
+    "skills": "Ubumenyi n'Ibisabwa",
+    "description": "Ibisobanuro by'Umushinga",
+    "submitProposal": "Ohereza Igisabwa",
+    "signInToApply": "Injira kugirango usabe",
+    "depositEscrow": "Shyiramo Amafaranga",
+    "submitForReview": "Ohereza Kode Isuzumwe",
+    "approveCode": "Emeza Kode",
+    "rejectCode": "Hagarika Kode",
+    "raiseDispute": "Tanga Ikibazo",
+    "completed": "Umushinga Warangiye",
+    "closed": "Gusaba Byarafunzwe",
+    "client": "Umukiriya",
+    "mentor": "Umujyanama",
+    "pendingAssignment": "Birategereje gutangwa",
+    "lastActivity": "Igikorwa cy'Imperuka",
+    "noActivityYet": "Nta gikorwa kirabaho",
+    "safeTransactions": "Ubucuruzi Bwizewe",
+    "escrowMessage": "Amafaranga yose abitswe mu buryo bwizewe kugeza igihe kode yemejwe n'Abajyanama."
+  },
+  "proposals": {
+    "proposedPrice": "Igiciro Gisabwa ($)",
+    "estimatedDays": "Iminsi Yateganijwe",
+    "coverLetter": "Ibaruwa y'Igikorwa",
+    "referenceLinks": "Amahuza y'Imishinga Yarangiye (kugeza kuri 5)",
+    "addLink": "+ Ongeraho ahandi",
+    "sendProposal": "Ohereza Igisabwa",
+    "accept": "Emeza",
+    "applicants": "Abasaba",
+    "noProposals": "Nta gisabwa kirabaho."
+  },
+  "escrow": {
+    "phoneRequired": "Nimero ya telefoni irakenewe ku bw'ubwishyu bwa MoMo",
+    "updateProfile": "Hindura umwirondoro wawe wongereho nimero ya telefoni"
+  },
+  "students": {
+    "findTitle": "Shakisha Abanyeshuri",
+    "findSubtitle": "Shakisha kandi ushungure abanyeshuri hakoreshejwe ubumenyi, urwego, n'igipimo cy'ibirangiye.",
+    "skill": "Ubumenyi",
+    "tier": "Urwego",
+    "minCompletionRate": "Igipimo Ntarengwa cy'Ibirangiye",
+    "allTiers": "Inzego zose",
+    "projectsCompleted": "imishinga yarangiye",
+    "completionRate": "igipimo cy'ibirangiye",
+    "viewPortfolio": "Reba Umwirondoro Wose",
+    "noStudents": "Nta munyeshuri wabonetse",
+    "adjustFilters": "Gerageza uhindure ishungura."
+  },
+  "verification": {
+    "title": "Kwemeza Indangamuntu",
+    "nationalId": "Indangamuntu y'u Rwanda",
+    "fullName": "Amazina Yuzuye",
+    "verify": "Emeza Indangamuntu Yanjye"
+  },
+  "dashboard": {
+    "welcome": "Murakaza neza"
+  }
+}

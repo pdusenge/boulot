@@ -1,0 +1,123 @@
+{
+  "common": {
+    "appName": "BOULOT",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "back": "Back",
+    "next": "Next",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "messages": "Messages",
+    "browse": "Browse",
+    "verifyId": "Verify ID",
+    "myProjects": "My Projects",
+    "myProposals": "My Proposals",
+    "myProfile": "My Profile",
+    "findStudents": "Find Students",
+    "reviewQueue": "Review Queue",
+    "disputes": "Disputes",
+    "admin": "Admin",
+    "users": "Users",
+    "templates": "Templates",
+    "helpCenter": "Help Center"
+  },
+  "landing": {
+    "heroTitle": "Where African Student Talent Meets SME Opportunity",
+    "heroSubtitle": "Boulot connects university students with SMEs through managed projects, escrow payments, and mentor oversight.",
+    "getStarted": "Get Started",
+    "availableProjects": "Available Projects",
+    "hireTalent": "Hire Talent",
+    "becomeTalent": "Become a Talent"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to your account",
+    "registerTitle": "Create an account",
+    "email": "Email",
+    "password": "Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "role": "Role",
+    "student": "Student",
+    "sme": "SME / Hiring",
+    "mentor": "Mentor",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "projects": {
+    "title": "Available Projects",
+    "createNew": "Post New Project",
+    "searchPlaceholder": "Search by title, skills, or description...",
+    "budget": "Budget",
+    "status": "Status",
+    "skills": "Skills & Requirements",
+    "description": "Project Description",
+    "submitProposal": "Submit Your Proposal",
+    "signInToApply": "Sign In to Apply",
+    "depositEscrow": "Deposit Escrow",
+    "submitForReview": "Submit Code for Review",
+    "approveCode": "Approve Code",
+    "rejectCode": "Reject Code",
+    "raiseDispute": "Raise Dispute",
+    "completed": "Project Completed",
+    "closed": "Applications Closed",
+    "client": "Client",
+    "mentor": "Mentor",
+    "pendingAssignment": "Pending assignment",
+    "lastActivity": "Last Activity",
+    "noActivityYet": "No activity yet",
+    "safeTransactions": "Safe Transactions",
+    "escrowMessage": "All payments are held securely in Escrow until the code is verified by Mentors."
+  },
+  "proposals": {
+    "proposedPrice": "Proposed Price ($)",
+    "estimatedDays": "Est. Completion (Days)",
+    "coverLetter": "Cover Letter",
+    "referenceLinks": "Reference Links (past projects, up to 5)",
+    "addLink": "+ Add another link",
+    "sendProposal": "Send Proposal",
+    "accept": "Accept",
+    "applicants": "Applicants",
+    "noProposals": "No proposals yet."
+  },
+  "escrow": {
+    "phoneRequired": "Phone number required for MoMo payment",
+    "updateProfile": "Update your profile with your phone number"
+  },
+  "students": {
+    "findTitle": "Find Students",
+    "findSubtitle": "Search and filter students by skill badges, tier, and completion rate.",
+    "skill": "Skill",
+    "tier": "Tier",
+    "minCompletionRate": "Min Completion Rate",
+    "allTiers": "All tiers",
+    "projectsCompleted": "projects completed",
+    "completionRate": "completion rate",
+    "viewPortfolio": "View Full Portfolio",
+    "noStudents": "No students found",
+    "adjustFilters": "Try adjusting your filters."
+  },
+  "verification": {
+    "title": "Identity Verification",
+    "nationalId": "Rwandan National ID",
+    "fullName": "Full Legal Name",
+    "verify": "Verify My Identity"
+  },
+  "dashboard": {
+    "welcome": "Welcome back"
+  }
+}

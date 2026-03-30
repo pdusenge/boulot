@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --accent: #FF6B00;
+  --muted: #F5F5F7;
+  --border: #E5E5E7;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-bold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+
+  .grid-bg {
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .duotone {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .duotone::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--accent);
+    mix-blend-mode: multiply;
+    z-index: 10;
+  }
+
+  .duotone::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000;
+    mix-blend-mode: screen;
+    z-index: 10;
+  }
+}
